@@ -18,6 +18,7 @@ import java.util.List;
 import Entities.Album;
 
 import Constants.Constant;
+import sidespell.tech.midtermexam.R;
 
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MovieViewHolder> {
@@ -79,11 +80,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         @Override
         public void onClick(View v) {
-            Context context = v.getContext();
-            Intent intent = new Intent(context, MovieDetailsActivity.class);
 
-            intent.putExtra(Constants.EXTRA_POSITION, getAdapterPosition());
-            context.startActivity(intent);
         }
     }
 }
