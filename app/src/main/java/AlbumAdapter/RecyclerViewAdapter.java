@@ -21,7 +21,7 @@ import Constants.Constant;
 import sidespell.tech.midtermexam.R;
 
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MovieViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.AlbumViewHolder> {
 
     private Context     mContext;
     private int         mLayoutId;
@@ -34,13 +34,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AlbumViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(mLayoutId, parent, false);
-        return new MovieViewHolder(view);
+        return new AlbumViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(MovieViewHolder holder, int position) {
+    public void onBindViewHolder(AlbumViewHolder holder, int position) {
         Album music = mMusic.get(position);
 
         if (music != null) {
@@ -61,13 +61,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return mMusic.size();
     }
 
-    static class MovieViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    static class AlbumViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public CardView  cardView;
         public ImageView imgMovie;
         public TextView  tvName;
         public TextView  tvGenre;
 
-        public MovieViewHolder(View view) {
+        public AlbumViewHolder(View view) {
             super(view);
             cardView = (CardView) view.findViewById(R.id.cardView);
             imgMovie = (ImageView) view.findViewById(R.id.imgMovie);
