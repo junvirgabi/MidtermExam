@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.item_touch_helper_previous_elevation:
-                Toast.makeText(this, "You selected to clear the search operation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "You selected to change churvaloo", Toast.LENGTH_SHORT).show();
 
         }
         return super.onOptionsItemSelected(item);

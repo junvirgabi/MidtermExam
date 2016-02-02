@@ -22,7 +22,7 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.recycler_list_item, container, false);
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         // TODO: Find all views here..
 
@@ -48,17 +48,17 @@ public class MainFragment extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(llm);
 
-        // Create a new instance of the adapter
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getContext(),
-                R.layout.recycler_list_item, mController.getMovies());
-
-        // Set the Adapter
-        recyclerView.setAdapter(adapter);
-
-        if (adapter.getItemCount() == 0) {
-            tvEmpty.setVisibility(View.VISIBLE);
-        } else {
-            tvEmpty.setVisibility(View.GONE);
-        }
+//        // Create a new instance of the adapter
+//        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getContext(),
+//                R.layout.recycler_list_item, mController.getMovies());
+//
+//        // Set the Adapter
+//        recyclerView.setAdapter(adapter);
+//
+//        if (adapter.getItemCount() == 0) {
+//            tvEmpty.setVisibility(View.VISIBLE);
+//        } else {
+//            tvEmpty.setVisibility(View.GONE);
+//        }
     }
     }
