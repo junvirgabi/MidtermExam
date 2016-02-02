@@ -1,4 +1,4 @@
-package Entities;
+package sidespell.tech.midtermexam.Entities;
 
 /**
  * Created by junvir on 2/2/2016.

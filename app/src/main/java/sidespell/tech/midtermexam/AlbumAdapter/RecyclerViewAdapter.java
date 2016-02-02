@@ -1,10 +1,9 @@
-package AlbumAdapter;
+package sidespell.tech.midtermexam.AlbumAdapter;
 
 /**
  * Created by junvir on 2/2/2016.
  */
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,9 +14,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import Entities.Album;
-
-import Constants.Constant;
+import sidespell.tech.midtermexam.Entities.Album;
 import sidespell.tech.midtermexam.R;
 
 

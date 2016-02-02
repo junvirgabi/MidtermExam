@@ -1,4 +1,4 @@
-package Constants;
+package sidespell.tech.midtermexam.Constants;
 
 /**
  * Created by junvir on 2/2/2016.
